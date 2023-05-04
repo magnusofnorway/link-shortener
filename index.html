@@ -4,8 +4,8 @@
   <script>
     (() => {
       const code = location.pathname.split("/").filter(i => i !== "").reverse()[0];
-      const base = "appZpbJa44TkE9Bew";
-      const read_only_api_key = "keyJs2secz3N4e6FT"
+      const base = "appyZ1WAW3gnTss4H";
+      const read_only_api_key = "patPIbpfqmWeeTQzY.700c9c102e4536eaea6a6a3c4a75f48a91ec636dfbe6707b2fe5c6a37e370a3b"
       
       let request = new XMLHttpRequest();
           request.open("GET", `https://api.airtable.com/v0/${base}/Links?maxRecords=1&view=Grid%20view&filterByFormula=%7BCode%7D%3D'${code}'`, true);
