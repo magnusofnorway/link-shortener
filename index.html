@@ -6,7 +6,7 @@
     (() => {
       const code = location.pathname.split("/").filter(i => i !== "").reverse()[0];
       const base = "appISkKrjipzPHwR8";
-      const read_only_api_key = "patcqSi6Rr4bD4bde.520c54591d8bec9a86fa206950608c39a9562820020a131dae81a10efb54c8ed"
+      const read_only_api_key = "patUoIchzRwigoNnn.d48c1f0f0e02d79768e8718ca966f9e6b6bf06a0ad659e12a656e8f5bd0fe09d"
       
       let request = new XMLHttpRequest();
           request.open("GET", `https://api.airtable.com/v0/${base}/ShortLinks?maxRecords=1&view=Grid%20view&filterByFormula=%7BCode%7D%3D'${code}'`, true);
