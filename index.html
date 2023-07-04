@@ -9,7 +9,7 @@
       const read_only_api_key = "patcqSi6Rr4bD4bde.520c54591d8bec9a86fa206950608c39a9562820020a131dae81a10efb54c8ed"
       
       let request = new XMLHttpRequest();
-          request.open("GET", `https://api.airtable.com/v0/${base}/Links?maxRecords=1&view=Grid%20view&filterByFormula=%7BCode%7D%3D'${code}'`, true);
+          request.open("GET", `https://api.airtable.com/v0/${base}/ShortLinks?maxRecords=1&view=Grid%20view&filterByFormula=%7BCode%7D%3D'${code}'`, true);
           request.setRequestHeader("Authorization", `Bearer ${read_only_api_key}`);
       request.onload = function() {
         if (this.status >= 200 && this.status < 400) {
